@@ -1,0 +1,6 @@
+framework module CDVRequest {
+  umbrella header "CDVRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

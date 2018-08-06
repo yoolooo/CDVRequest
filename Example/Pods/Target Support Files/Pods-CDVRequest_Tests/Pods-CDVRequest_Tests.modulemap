@@ -1,0 +1,6 @@
+framework module Pods_CDVRequest_Tests {
+  umbrella header "Pods-CDVRequest_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

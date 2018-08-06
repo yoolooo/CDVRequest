@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA758F421182DED000E180D /* CDVNetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758EE21182DEC000E180D /* CDVNetAction.m */; };
+		2CA758F521182DED000E180D /* CDVUploadAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758EF21182DEC000E180D /* CDVUploadAction.m */; };
+		2CA758F621182DED000E180D /* CDVNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758F221182DEC000E180D /* CDVNetworking.m */; };
+		2CA758F721182DED000E180D /* CDVNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758F321182DEC000E180D /* CDVNetManager.m */; };
+		2CA758FA21182F60000E180D /* YLInterface_NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758F921182F60000E180D /* YLInterface_NetRequest.m */; };
 		3B70A8B3037309DFC50C1E63 /* Pods_CDVRequest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14E02C761CC6BB2AC526AA2 /* Pods_CDVRequest_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,11 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A99F5E416C75D257C71DB06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2CA758EC21182DEC000E180D /* CDVNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVNetManager.h; path = ../../CDVRequest/Classes/CDVNetManager.h; sourceTree = "<group>"; };
+		2CA758ED21182DEC000E180D /* CDVUploadAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVUploadAction.h; path = ../../CDVRequest/Classes/CDVUploadAction.h; sourceTree = "<group>"; };
+		2CA758EE21182DEC000E180D /* CDVNetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNetAction.m; path = ../../CDVRequest/Classes/CDVNetAction.m; sourceTree = "<group>"; };
+		2CA758EF21182DEC000E180D /* CDVUploadAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVUploadAction.m; path = ../../CDVRequest/Classes/CDVUploadAction.m; sourceTree = "<group>"; };
+		2CA758F021182DEC000E180D /* CDVNetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVNetAction.h; path = ../../CDVRequest/Classes/CDVNetAction.h; sourceTree = "<group>"; };
+		2CA758F121182DEC000E180D /* CDVNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVNetworking.h; path = ../../CDVRequest/Classes/CDVNetworking.h; sourceTree = "<group>"; };
+		2CA758F221182DEC000E180D /* CDVNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNetworking.m; path = ../../CDVRequest/Classes/CDVNetworking.m; sourceTree = "<group>"; };
+		2CA758F321182DEC000E180D /* CDVNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNetManager.m; path = ../../CDVRequest/Classes/CDVNetManager.m; sourceTree = "<group>"; };
+		2CA758F821182F60000E180D /* YLInterface_NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YLInterface_NetRequest.h; path = ../../CDVRequest/Classes/YLInterface_NetRequest.h; sourceTree = "<group>"; };
+		2CA758F921182F60000E180D /* YLInterface_NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YLInterface_NetRequest.m; path = ../../CDVRequest/Classes/YLInterface_NetRequest.m; sourceTree = "<group>"; };
+		3A99F5E416C75D257C71DB06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4926AB3DE4A74A0AD2A3B927 /* Pods-CDVRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDVRequest_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDVRequest_Tests/Pods-CDVRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4FF288DF3E214AD71558E0A8 /* CDVRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CDVRequest.podspec; path = ../CDVRequest.podspec; sourceTree = "<group>"; };
+		4FF288DF3E214AD71558E0A8 /* CDVRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CDVRequest.podspec; path = ../CDVRequest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		527936A420D251788DE3C800 /* Pods-CDVRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDVRequest_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDVRequest_Example/Pods-CDVRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5B0A24338A981CB7CA074C5E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5B0A24338A981CB7CA074C5E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CDVRequest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDVRequest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA758EB21182D95000E180D /* NetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2CA758F021182DEC000E180D /* CDVNetAction.h */,
+				2CA758EE21182DEC000E180D /* CDVNetAction.m */,
+				2CA758EC21182DEC000E180D /* CDVNetManager.h */,
+				2CA758F321182DEC000E180D /* CDVNetManager.m */,
+				2CA758F121182DEC000E180D /* CDVNetworking.h */,
+				2CA758F221182DEC000E180D /* CDVNetworking.m */,
+				2CA758ED21182DEC000E180D /* CDVUploadAction.h */,
+				2CA758EF21182DEC000E180D /* CDVUploadAction.m */,
+				2CA758F821182F60000E180D /* YLInterface_NetRequest.h */,
+				2CA758F921182F60000E180D /* YLInterface_NetRequest.m */,
+			);
+			name = NetRequest;
+			sourceTree = "<group>";
+		};
 		3971A82F5D188EDE5A39491E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +175,7 @@
 		6003F593195388D20070C39A /* Example for CDVRequest */ = {
 			isa = PBXGroup;
 			children = (
+				2CA758EB21182D95000E180D /* NetRequest */,
 				6003F59C195388D20070C39A /* CDVAppDelegate.h */,
 				6003F59D195388D20070C39A /* CDVAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -380,9 +413,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA758FA21182F60000E180D /* YLInterface_NetRequest.m in Sources */,
 				6003F59E195388D20070C39A /* CDVAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CDVViewController.m in Sources */,
+				2CA758F721182DED000E180D /* CDVNetManager.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				2CA758F421182DED000E180D /* CDVNetAction.m in Sources */,
+				2CA758F521182DED000E180D /* CDVUploadAction.m in Sources */,
+				2CA758F621182DED000E180D /* CDVNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

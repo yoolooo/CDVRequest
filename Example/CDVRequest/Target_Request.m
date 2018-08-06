@@ -1,15 +1,30 @@
 //
-//  YLInterface_NetRequest.m
+//  Target_Request.m
 //  CDVRequest_Example
 //
 //  Created by yan on 2018/8/6.
 //  Copyright © 2018年 yoolooo. All rights reserved.
 //
 
-#import "YLInterface_NetRequest.h"
+#import "Target_Request.h"
 #import "CDVNetManager.h"
 
-@implementation YLInterface_NetRequest
+@implementation Target_Request
+
+- (void)requestWithParams:(NSDictionary*)params{
+    
+    NSString *url = params[@"url"];
+    NSDictionary *requestParams = params[@"params"];
+    NSNumber *timeout = params[@"timeout"];
+    NSNumber *showlog = params[@"showlog"];
+    CDVVoidBlock willInvokeBlock = params[@"willInvokeBlock"];
+    CDVActionComplationBlock didInvokeBlock = params[@"didInvokeBlock"];
+    CDVTypeBlock success = params[@"successBlock"];
+    CDVErrorBlock failure = params[@"failureBlock"];
+    [self ylInterface_requestUrl:url Params:requestParams timeout:timeout.floatValue showlog:showlog.boolValue WillInvokeBlock:willInvokeBlock DidInvokeBlock:didInvokeBlock Success:success failure:failure];
+    
+}
+
 
 - (void)ylInterface_requestUrl:(NSString*)url Params:(NSDictionary*)params timeout:(CGFloat)timeout showlog:(BOOL)showlog WillInvokeBlock:(CDVVoidBlock)willInvokeBlock DidInvokeBlock:(CDVActionComplationBlock)didInvokeBlock Success:(CDVTypeBlock)success failure:(CDVErrorBlock)failure{
     

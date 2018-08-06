@@ -11,7 +11,7 @@
 		2CA758F521182DED000E180D /* CDVUploadAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758EF21182DEC000E180D /* CDVUploadAction.m */; };
 		2CA758F621182DED000E180D /* CDVNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758F221182DEC000E180D /* CDVNetworking.m */; };
 		2CA758F721182DED000E180D /* CDVNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA758F321182DEC000E180D /* CDVNetManager.m */; };
-		2CA7590A21183C51000E180D /* Target_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7590921183C51000E180D /* Target_Request.m */; };
+		2CA7590D21183F1B000E180D /* Target_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7590B21183F1B000E180D /* Target_Request.m */; };
 		3B70A8B3037309DFC50C1E63 /* Pods_CDVRequest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14E02C761CC6BB2AC526AA2 /* Pods_CDVRequest_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -50,8 +50,8 @@
 		2CA758F121182DEC000E180D /* CDVNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVNetworking.h; path = ../../CDVRequest/Classes/CDVNetworking.h; sourceTree = "<group>"; };
 		2CA758F221182DEC000E180D /* CDVNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNetworking.m; path = ../../CDVRequest/Classes/CDVNetworking.m; sourceTree = "<group>"; };
 		2CA758F321182DEC000E180D /* CDVNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNetManager.m; path = ../../CDVRequest/Classes/CDVNetManager.m; sourceTree = "<group>"; };
-		2CA7590821183C51000E180D /* Target_Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Request.h; sourceTree = "<group>"; };
-		2CA7590921183C51000E180D /* Target_Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Request.m; sourceTree = "<group>"; };
+		2CA7590B21183F1B000E180D /* Target_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Target_Request.m; path = ../../CDVRequest/Classes/Target_Request.m; sourceTree = "<group>"; };
+		2CA7590C21183F1B000E180D /* Target_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Target_Request.h; path = ../../CDVRequest/Classes/Target_Request.h; sourceTree = "<group>"; };
 		3A99F5E416C75D257C71DB06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4926AB3DE4A74A0AD2A3B927 /* Pods-CDVRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDVRequest_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDVRequest_Tests/Pods-CDVRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FF288DF3E214AD71558E0A8 /* CDVRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CDVRequest.podspec; path = ../CDVRequest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -113,6 +113,8 @@
 		2CA758EB21182D95000E180D /* NetRequest */ = {
 			isa = PBXGroup;
 			children = (
+				2CA7590C21183F1B000E180D /* Target_Request.h */,
+				2CA7590B21183F1B000E180D /* Target_Request.m */,
 				2CA758F021182DEC000E180D /* CDVNetAction.h */,
 				2CA758EE21182DEC000E180D /* CDVNetAction.m */,
 				2CA758EC21182DEC000E180D /* CDVNetManager.h */,
@@ -121,8 +123,6 @@
 				2CA758F221182DEC000E180D /* CDVNetworking.m */,
 				2CA758ED21182DEC000E180D /* CDVUploadAction.h */,
 				2CA758EF21182DEC000E180D /* CDVUploadAction.m */,
-				2CA7590821183C51000E180D /* Target_Request.h */,
-				2CA7590921183C51000E180D /* Target_Request.m */,
 			);
 			name = NetRequest;
 			sourceTree = "<group>";
@@ -413,9 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA7590A21183C51000E180D /* Target_Request.m in Sources */,
 				6003F59E195388D20070C39A /* CDVAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CDVViewController.m in Sources */,
+				2CA7590D21183F1B000E180D /* Target_Request.m in Sources */,
 				2CA758F721182DED000E180D /* CDVNetManager.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				2CA758F421182DED000E180D /* CDVNetAction.m in Sources */,

@@ -24,4 +24,20 @@
  */
 - (void)requestWithParams:(NSDictionary*)params;
 
+
+/**
+ 上传
+ @param params
+ NSString *url = params[@"url"];
+ NSDictionary *requestParams = params[@"params"];
+ NSData *file = params[@"data"];
+ NSString *fileName = params[@"fileName"];
+ NSString *uploadName = params[@"uploadName"];
+ NSString *mimeType = params[@"mimeType"];
+ void (^progress) (NSProgress *uploadProgress) = params[@"progress"];
+ CDVTypeBlock success = params[@"successBlock"];
+ CDVErrorBlock failure = params[@"failureBlock"];
+ */
+- (void)uploadWithParams:(NSDictionary*)params;
+
 @end

@@ -11,7 +11,7 @@
 
 @implementation Target_Request
 
-- (void)requestWithParams:(NSDictionary*)params{
+- (void)action_requestWithParams:(NSDictionary*)params{
     
     NSString *url = params[@"url"];
     NSDictionary *requestParams = params[@"params"];
@@ -24,7 +24,7 @@
     [self requestUrl:url Params:requestParams timeout:timeout.floatValue showlog:showlog.boolValue WillInvokeBlock:willInvokeBlock DidInvokeBlock:didInvokeBlock Success:success failure:failure];
 }
 
-- (void)uploadWithParams:(NSDictionary*)params{
+- (void)action_uploadWithParams:(NSDictionary*)params{
     
     NSString *url = params[@"url"];
     NSDictionary *requestParams = params[@"params"];

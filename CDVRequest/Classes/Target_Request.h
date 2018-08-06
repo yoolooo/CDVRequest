@@ -22,7 +22,7 @@
  CDVTypeBlock success = params[@"successBlock"];
  CDVErrorBlock failure = params[@"failureBlock"];
  */
-- (void)requestWithParams:(NSDictionary*)params;
+- (void)action_requestWithParams:(NSDictionary*)params;
 
 
 /**
@@ -38,6 +38,6 @@
  CDVTypeBlock success = params[@"successBlock"];
  CDVErrorBlock failure = params[@"failureBlock"];
  */
-- (void)uploadWithParams:(NSDictionary*)params;
+- (void)action_uploadWithParams:(NSDictionary*)params;
 
 @end

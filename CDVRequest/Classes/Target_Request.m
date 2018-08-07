@@ -11,6 +11,24 @@
 
 @implementation Target_Request
 
+
+- (void)action_setCodeKey:(NSString *)codeKey{
+    [[CDVNetManager shareInstance] codeKey:codeKey];
+}
+
+- (void)action_setGlobleParameter:(NSDictionary*)globleParames{
+    CDVNetManager *manager = [CDVNetManager shareInstance];
+    manager.globleParameter = globleParames;
+}
+
+- (void)action_setWarningCodesAndHandler:(NSDictionary*)params{
+    
+    NSArray *codes = params[@"warningCodes"];
+    void(^returnHandler)(NSString *code) = params[@"handler"];
+    [[CDVNetManager shareInstance] warningReternCodes:codes withHandler:returnHandler];
+}
+
+
 - (void)action_requestWithParams:(NSDictionary*)params{
     
     NSString *url = params[@"url"];

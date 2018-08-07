@@ -10,6 +10,25 @@
 
 @interface Target_Request : NSObject
 
+
+/**
+ 设置code字段 (@“Code”)
+ */
+- (void)action_setCodeKey:(NSString*)codeKey;
+
+/**
+ 设置全局请求参数
+ */
+- (void)action_setGlobleParameter:(NSDictionary*)globleParames;
+
+/**
+ 设置警告代码
+ @param params
+ NSArray *codes = params[@"warningCodes"];
+ void(^returnHandler)(NSString *code) = params[@"handler"];
+ */
+- (void)action_setWarningCodesAndHandler:(NSDictionary*)params;
+
 /**
 开始请求
  @param params
@@ -39,5 +58,7 @@
  CDVErrorBlock failure = params[@"failureBlock"];
  */
 - (void)action_uploadWithParams:(NSDictionary*)params;
+
+
 
 @end

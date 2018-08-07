@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDVRequest'
-  s.version          = '0.1.4'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of CDVRequest.'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CDVRequest/Classes/**/*'
+  s.source_files = 'CDVRequest/Framework/**/*'
   
   # s.resource_bundles = {
   #   'CDVRequest' => ['CDVRequest/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'CDVRequest/Classes/Target_Request.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'AFNetworking', '~> 3.0.0'
 end

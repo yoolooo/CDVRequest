@@ -12,8 +12,8 @@
 @implementation Target_Request
 
 
-- (void)action_setCodeKey:(NSString *)codeKey{
-    [[CDVNetManager shareInstance] codeKey:codeKey];
+- (void)action_setCodeKey:(NSDictionary *)codeKey{
+    [[CDVNetManager shareInstance] codeKey:codeKey[@"codeKey"]];
 }
 
 - (void)action_setGlobleParameter:(NSDictionary*)globleParames{

@@ -12,9 +12,11 @@
 
 
 /**
- 设置code字段 (@“Code”)
+ 设置code字段
+ @param params
+ codekey[@"codeKey"]
  */
-- (void)action_setCodeKey:(NSString*)codeKey;
+- (void)action_setCodeKey:(NSDictionary*)codeKey;
 
 /**
  设置全局请求参数
